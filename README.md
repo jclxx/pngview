@@ -7,11 +7,13 @@ display the images on the user's screen.
 
 Compile it e.g. like this:
 
-    $ cc -lm -lX11 -O3 -Wall -o pngview -std=c99 *.c
+    $ cc -O3 -Wall -o pngview -std=c99 *.c -lm -lX11
+or
+    $ make
 
 Then run it like this:
 
-    $ ./pngview lena.png
+    $ ./pngview testimage.png
 
 pngview was written for the fun of the exercise, and is neither very
 efficient nor bug-free. It supports indexed pixels, grayscale, truecolor
